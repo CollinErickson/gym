@@ -15,6 +15,8 @@ class RandomAgent(object):
         return self.action_space.sample()
 
 if __name__ == '__main__':
+    gym.scoreboard.api_key = "sk_bgir0EcKTNSwFOM8wLW9WA"
+    
     parser = argparse.ArgumentParser(description=None)
     parser.add_argument('env_id', nargs='?', default='CartPole-v0', help='Select the environment to run')
     args = parser.parse_args()
