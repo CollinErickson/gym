@@ -48,6 +48,8 @@ def do_rollout(agent, env, num_steps, render=False):
     return total_rew, t+1
 
 if __name__ == '__main__':
+    gym.scoreboard.api_key = "sk_bgir0EcKTNSwFOM8wLW9WA"
+    
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
 
